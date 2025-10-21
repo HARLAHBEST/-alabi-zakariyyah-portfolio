@@ -20,14 +20,14 @@ export default function Portfolio() {
       await addDoc(collection(db, "messages"), form);
 
       await emailjs.send(
-        "service_z21fqcb", 
-        "template_3e3dfkr", 
+        "service_z21fqcb",
+        "template_3e3dfkr",
         {
           name: form.name,
           email: form.email,
           message: form.message,
         },
-        "CvW_tW8gX0qNmBi1Z" 
+        "CvW_tW8gX0qNmBi1Z"
       );
 
       setStatus("✅ Message sent successfully!");
@@ -42,8 +42,8 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Personal Portfolio Website",
-      desc: "A modern portfolio built with React, Bootstrap, Firebase, and EmailJS to showcase my skills and contact form.",
-      tags: ["React", "Bootstrap", "Firebase", "EmailJS"],
+      desc: "A modern portfolio built with React, Next.js, Bootstrap, Firebase, and EmailJS to showcase my skills and contact form.",
+      tags: ["Next.js", "React", "Bootstrap", "Firebase", "EmailJS"],
       link: "https://yourportfolio.com",
     },
     {
@@ -75,7 +75,7 @@ export default function Portfolio() {
           <div>
             <h5 className="mb-0">ALABI ZAKARIYYAH OLAMILEKAN</h5>
             <small className="text-muted">
-              Software Developer • MERN Stack Developer
+              Software Developer • MERN / Next.js Developer
             </small>
           </div>
         </div>
@@ -103,13 +103,14 @@ export default function Portfolio() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="fw-bold display-5">
-              Hi, I'm ALABI ZAKARIYYAH OLAMILEKAN — a passionate MERN Stack
+              Hi, I'm ALABI ZAKARIYYAH OLAMILEKAN — a passionate MERN & Next.js
               Developer.
             </h1>
             <p className="mt-3 text-secondary">
               I build interactive, scalable, and user-friendly web applications
-              using modern technologies. I love solving real-world problems
-              through clean code and creative solutions.
+              using modern JavaScript technologies like React, Next.js, Node.js,
+              and MongoDB. I love solving real-world problems through clean code
+              and creative solutions.
             </p>
 
             <div className="mt-4 d-flex gap-3">
@@ -122,8 +123,8 @@ export default function Portfolio() {
             </div>
 
             <p className="mt-3 text-muted small">
-              <strong>Tech Stack:</strong> React • Node.js • Express • MongoDB •
-              Bootstrap • Firebase • EmailJS
+              <strong>Tech Stack:</strong> React • Next.js • Node.js • Express •
+              MongoDB • Bootstrap • Firebase • EmailJS
             </p>
           </motion.div>
 
@@ -219,12 +220,14 @@ export default function Portfolio() {
             <p className="text-secondary mt-3">
               I’m a certified MERN Stack Developer from SQI College of ICT. My
               training focused on full-stack web development — mastering
-              MongoDB, Express.js, React, and Node.js.
+              MongoDB, Express.js, React, and Node.js. Recently, I’ve been
+              expanding into Next.js to build modern, SEO-optimized, and
+              high-performance applications.
             </p>
 
             <h5 className="mt-4 fw-semibold">Experience & Learning</h5>
             <ul className="text-secondary">
-              <li>Frontend with React and Bootstrap</li>
+              <li>Frontend with React, Next.js, and Bootstrap</li>
               <li>Backend with Node.js, Express & MongoDB</li>
               <li>Certified MERN Stack Developer — SQI College of ICT</li>
             </ul>
@@ -244,6 +247,7 @@ export default function Portfolio() {
                 <ul className="list-group list-group-flush mt-3">
                   {[
                     "React",
+                    "Next.js",
                     "Node.js",
                     "Express",
                     "MongoDB",
@@ -293,7 +297,11 @@ export default function Portfolio() {
               transition={{ duration: 0.5 }}
               className="mt-4"
             >
-              <form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: 500 }}>
+              <form
+                onSubmit={handleSubmit}
+                className="mx-auto"
+                style={{ maxWidth: 500 }}
+              >
                 <div className="mb-3 text-start">
                   <label className="form-label">Name</label>
                   <input
@@ -350,11 +358,14 @@ export default function Portfolio() {
       <footer className="bg-dark text-white py-4 text-center">
         <div className="container">
           <p className="mb-1">
-            <strong>© {new Date().getFullYear()} ALABI ZAKARIYYAH OLAMILEKAN.</strong>{" "}
+            <strong>
+              © {new Date().getFullYear()} ALABI ZAKARIYYAH OLAMILEKAN.
+            </strong>{" "}
             All rights reserved.
           </p>
           <p className="small mb-3">
-            Designed & Built with ❤️ using React, Bootstrap, Firebase, and EmailJS.
+            Designed & Built with ❤️ using React, Next.js, Bootstrap, Firebase,
+            and EmailJS.
           </p>
           <div className="d-flex justify-content-center gap-4 flex-wrap">
             <a
