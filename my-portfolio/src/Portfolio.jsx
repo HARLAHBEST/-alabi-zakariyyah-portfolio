@@ -159,6 +159,14 @@ export default function Portfolio() {
                 >
                   View Live Project
                 </a>
+                  <a
+                  href="https://oyekanmibolaajienterprise.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-link text-decoration-none text-primary mt-3 p-0"
+                >
+                  View Live Project
+                </a>
               </div>
             </div>
           </motion.div>
