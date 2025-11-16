@@ -22,7 +22,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-accent font-medium">
-            Full-Stack Engineer × MERN Developer
+            Full-Stack Engineer × MERN Developer × Next.js Enthusiast
           </p>
           
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
