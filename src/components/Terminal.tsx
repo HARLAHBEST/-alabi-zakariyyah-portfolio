@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const Terminal = () => {
   const [text, setText] = useState("");
-  const fullText = "mern_developer --init";
+  const fullText = "mern_developer --init --nextjs_specialist --build_scalable_apps";
   
   useEffect(() => {
     let index = 0;
