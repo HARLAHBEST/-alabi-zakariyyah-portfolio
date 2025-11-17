@@ -48,6 +48,14 @@ export const Projects = () => {
       link: "https://github.com/HARLAHBEST/task-app",
       status: "Completed",
     },
+    {
+  title: "LaTech — Tech Solutions Platform",
+  description:
+    "A modern tech solutions platform showcasing innovative software services, clean UI, responsive design, and optimized performance. Deployed on Vercel for fast global delivery.",
+  tags: ["React", "Next.js", "TailwindCSS", "Vercel", "Production"],
+  link: "https://latech.vercel.app/",
+  status: "Live",
+},
   ];
 
   return (
