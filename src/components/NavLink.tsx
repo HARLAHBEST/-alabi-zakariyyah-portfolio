@@ -6,7 +6,6 @@ interface NavLinkCompatProps extends Omit<NavLinkProps, "className"> {
   className?: string;
   activeClassName?: string;
   pendingClassName?: string;
-  hellooo
 }
 
 const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
